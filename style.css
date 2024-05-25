@@ -4,14 +4,24 @@
     margin: 0;
     font-family: Arial;
 }
+body
+{
+    background-color: rgb(255, 255, 255);
+}
 
 #menu-horizontal
 {
-    background-color: rgb(0, 0, 0);
+    background-color: rgb(48, 45, 45);
+}
+
+#nav-item
+{
+    position: relative;
+    right: 550px;
 }
 #menu-horizontal ul
 {
-    max-width: 800px;
+    max-width: 1000px;
     list-style: none;
     padding: 0;
 }
@@ -22,52 +32,79 @@
 #menu-horizontal ul li a
 {
     color: #fff;
-    padding: 20px;
+    font-size: 17px;
+    padding: 30px;
+    position: relative;
+    left: 600px;
     display: inline-block;
     text-decoration: none;
-    transition: background .4s;
+    transition: background .2s;
 }
 
 #menu-horizontal ul li a:hover
 {
-    background-color: rgb(24, 139, 233);
+    background-color: rgb(10, 128, 224);
 }
 
-#menu-horizontal ul li:last-child a
+#menu-horizontal ul li:last-child a 
 {
-    background-color: rgd(24, 139, 233);
+    position: relative;
+    left: 800px;
+    background-color: rgb(24, 139, 233);
 }
 
-#menu-h{
-    float: right;
-    background-color: rgb(37, 37, 39);
+.imagem
+{
+    position: relative;
+    width: 800px;
+    left: 600px;
+    height: 800px;
+    top: 20px;
+    border-radius: 20px;
 }
 
-#menu-h ul {
-    max-width: 800px;
-    list-style: none;
-    padding: 0;
+@media screen and (max-width: 600px) 
+{
+    .body 
+    {
+        font-size: 14px;
+    }
 }
-
-#menu-h ul li {
-    display: inline;
-}
-
-#menu-h ul li a {
-    color: #FFF;
-    padding: 20px;
+/* 
+.seta {
     display: inline-block;
+    width: 50px;
+    height: 50px;
+    background-color: #333;
+    position: relative;
     text-decoration: none;
-    transition: background .4s;
+    color: white;
+    text-align: center;
+    line-height: 50px;
 }
 
-#menu-h ul li a:hover {
-    background-color: rgb(24, 139, 233);
+.seta:before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 70%;
+    width: 10px;
+    height: 10px;
+    border-top: 2px solid white;
+    border-right: 2px solid white;
+    transform: rotate(45deg);
+    transition: all 0.3s ease;
 }
 
-#menu-h ul li:last-child a {
-    float: right;
-    background-color: rgb(24, 139, 233);
+.seta:hover:before {
+    left: 75%;
 }
 
+@keyframes avancar {
+    0% { transform: translateX(0); }
+    100% { transform: translateX(10px); }
+}
 
+.seta:hover:before {
+    animation: avancar 0.3s ease forwards;
+} */
