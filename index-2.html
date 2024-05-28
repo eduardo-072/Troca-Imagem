@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="estética.css">
+    <title>Troca Imagem JS</title>
+</head>
+<body>
+    <nav class="menu">
+      <a target="_blank" href="https://github.com/eduardo-072">meu github</a>
+    </nav>
+
+    <h1 class="titulo">Troca imagens</h1>
+    
+    <div class="edição">
+    <p><strong>VEJA ALGUNS MEMES</strong></p>
+    <img id="Memes" style="width: 300px; border-radius: 30px;" src="" alt="">
+    <br>
+    
+
+    <script src="javinha.js">
+document.addEventListener('DOMContentLoaded', function() {
+        var button = document.getElementById('trocaImagem');
+        var image = document.querySelector('img');
+        var imageIndex = 0;
+        var images = ['https://imgb.ifunny.co/images/8280ceb3c09973fb30dd8075f162f9d197494a77a06f8fbd6c62a96ae69d28c7_1.webp', 'https://oimparcial.com.br/app/uploads/2021/04/azul-caneta.jpg', 'giga-chad-meme-2.jpg']; // Replace with your image paths
+
+        button.addEventListener('click', function() {
+            image.src = images[imageIndex];
+            imageIndex = (imageIndex + 1) % images.length; // Loop back to the first image when reaching the end
+        });
+    });</script>
+    <button id="trocaImagem">Trocar Imagem</button>
+    </div>   
+</body>
+</html>

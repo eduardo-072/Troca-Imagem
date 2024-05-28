@@ -1,0 +1,58 @@
+*
+{
+    padding: 0;
+    margin: 0;
+    font-family: Arial;
+}
+
+.menu
+{
+    background-color: rgb(39, 37, 37);
+    padding: 30px ;
+}
+a
+{
+    text-decoration: none;
+    width: 200px;
+    color: #fff;
+    height: 100px;
+}
+.menu a:hover 
+{
+    position: relative;
+    color: rgb(24, 139, 233);
+}
+.titulo
+{
+    margin-top: 20px;
+    text-align: center;
+}
+
+.edição
+{
+    text-align: center;
+    margin-top: 100px;
+}
+
+#Memes
+{
+    text-align: center;
+    margin-top: 100px;
+    width: 400px; 
+    border-radius: 30px;
+} 
+
+#trocaImagem
+{
+   position: absolute;
+    top: 800px;
+    left: 910px;
+    padding: 10px;
+    border: 20px;
+    border-radius: 10px;
+}
+
+#trocaImagem:hover
+{
+    background-color:rgb(71, 162, 223);
+}
