@@ -4,18 +4,21 @@
     margin: 0;
     font-family: Arial;
 }
+body 
+{
+    background-color: rgb(255, 0, 0);
 
+}
 .menu
 {
     background-color: rgb(39, 37, 37);
     padding: 30px ;
 }
+
 a
 {
     text-decoration: none;
-    width: 200px;
     color: #fff;
-    height: 100px;
 }
 .menu a:hover 
 {
@@ -50,6 +53,10 @@ a
     padding: 10px;
     border: 20px;
     border-radius: 10px;
+}
+#Memes
+{
+    width: 400px;
 }
 
 #trocaImagem:hover
